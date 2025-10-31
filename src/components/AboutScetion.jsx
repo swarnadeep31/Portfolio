@@ -32,7 +32,7 @@ export const AboutScetion = () => {
               </a>
 
               <a
-                href=""
+                href="https://drive.google.com/file/d/1kqOx5FgZG3I2JU50iJG9TtOUloRxk-Nm/view?usp=sharing"
                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
