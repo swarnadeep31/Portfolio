@@ -2,20 +2,20 @@ import { useState } from "react";
 import { cn } from "../lib/utils";
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "TypeScript", level: 70, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "HTML/CSS", category: "frontend" },
+  { name: "JavaScript", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "TypeScript", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
 
   // Backend
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "SQL", level: 75, category: "backend" },
+  { name: "MongoDB", category: "backend" },
+  { name: "SQL", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", category: "tools" },
+  { name: "Figma", category: "tools" },
+  { name: "VS Code", category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -60,17 +60,13 @@ export const SkillsSections = () => {
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
               <div className="w-full bg-secondary/20 rounded-full overflow-hidden ">
-                <div
+                {/* <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
                   style={{ width: skill.level + "%" }}
-                />
+                /> */}
               </div>
 
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
-              </div>
+              <div className="text-right mt-1"></div>
             </div>
           ))}
         </div>

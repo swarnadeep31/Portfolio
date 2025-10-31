@@ -53,7 +53,7 @@ export const ProjectScetion = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-100"
                 />
               </div>
               <div className="p-6">

@@ -43,18 +43,26 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-6 justify-center">
+            <div className=" justify-center">
+              <div className="flex text-2xl font-semibold p-2">
+                <h3>Let's</h3>
+                <span className="text-primary">Talk,</span>
+              </div>
+
+              <div className="p-2 justify-start">
+                <p className="text-muted-foreground text-start">
+                  If you want to contact with me here are some information
+                </p>
+              </div>
               {/* Email Contact */}
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
+              <div className="flex gap-2  sm:flex-row items-center sm:items-start sm:space-x-4  sm:space-y-0 p-4">
+                <div className="p-3   rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Email</h4>
                   <a
                     href="mailto:Swarnadeeproy35@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary text-center sm:text-left text-sm h-10 items-center flex justify-center transition-colors duration-300"
                   >
                     Swarnadeeproy35@gmail.com
                   </a>
@@ -62,15 +70,14 @@ export const ContactSection = () => {
               </div>
 
               {/* Phone number  */}
-              <div className="flex items-start space-x-4">
+              <div className="flex sm:flex-row items-center gap-2 sm:items-start sm:space-x-4  sm:space-y-0 p-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Phone</h4>
                   <a
                     href="tel:+917439732996"
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary text-center sm:text-left text-sm h-10 items-center flex justify-center transition-colors duration-300"
                   >
                     +91 7439732996
                   </a>
@@ -78,40 +85,15 @@ export const ContactSection = () => {
               </div>
 
               {/* location */}
-              <div className="flex items-start space-x-4">
+              <div className="flex sm:flex-row items-center gap-2 sm:items-start sm:space-x-4  sm:space-y-0 p-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  <a className="text-muted-foreground hover:text-primary text-center sm:text-left text-sm h-10 items-center flex justify-center transition-colors duration-300">
                     Kolkata, WB, India
                   </a>
                 </div>
-              </div>
-            </div>
-
-            <div className="pt-8">
-              <h4 className="font-medium mb-4">Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a
-                  href="https://www.linkedin.com/in/swarnadeeproy/"
-                  target="_blank"
-                >
-                  <Linkedin />
-                </a>
-                <a
-                  href="https://www.instagram.com/thatgoddamntrip/"
-                  target="_blank"
-                >
-                  <Instagram />
-                </a>
-                <a
-                  href="https://www.instagram.com/thatgoddamntrip/"
-                  target="_blank"
-                >
-                  <Facebook />
-                </a>
               </div>
             </div>
           </div>
@@ -126,9 +108,7 @@ export const ContactSection = () => {
                 <label
                   htmlFor="name"
                   className="block text-xs font-medium mb-2"
-                >
-                  Your Name
-                </label>
+                ></label>
                 <input
                   type="text"
                   id="name"
@@ -143,9 +123,7 @@ export const ContactSection = () => {
                 <label
                   htmlFor="Email"
                   className="block text-xs font-medium mb-2"
-                >
-                  Your Email
-                </label>
+                ></label>
                 <input
                   type="text"
                   id="email"
@@ -160,9 +138,7 @@ export const ContactSection = () => {
                 <label
                   htmlFor="Message"
                   className="block text-xs font-medium mb-2"
-                >
-                  Your Message
-                </label>
+                ></label>
                 <textarea
                   id="message"
                   name="message"
