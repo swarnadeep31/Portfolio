@@ -37,7 +37,8 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground">Tech</span> Portfolio
+            <span className="text-glow text-foreground">Swarnadeep</span>{" "}
+            Portfolio
           </span>
         </a>
         {/* Desktop version */}
@@ -56,7 +57,7 @@ export const Navbar = () => {
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 z-50 text-foreground"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu" }
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
