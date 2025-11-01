@@ -1,18 +1,18 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
-  // {
-  //   id: 1,
-  //   title: "Car shop website",
-  //   description:
-  //     "A responsive car shop website built with React and Tailwind CSS.",
-  //   image: "/projects/project1.png",
-  //   tags: ["React", "Tailwind CSS", "JavaScript"],
-  //   demoUrl: "https://cars-phi-nine.vercel.app/",
-  //   githubUrl: "https://github.com/swarnadeep31/cars",
-  // },
   {
     id: 1,
+    title: "Car shop website",
+    description:
+      "A responsive car shop website built with React and Tailwind CSS.",
+    image: "/projects/project1.png",
+    tags: ["React", "Tailwind CSS", "JavaScript"],
+    demoUrl: "https://cars-phi-nine.vercel.app/",
+    githubUrl: "https://github.com/swarnadeep31/cars",
+  },
+  {
+    id: 2,
     title: "Esho Natok Shiki",
     description: "Darama shool website built with React and Tailwind CSS.",
     image: "/projects/project2.png",
